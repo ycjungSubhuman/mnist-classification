@@ -9,7 +9,7 @@ The code was developed and tested on a Linux environment, with following depende
 * CuDNN 7
 
 If this code does not work on your system, you can try running the code
-in our Docker image. Install nvidia-docker and run `docker/runbash.sh`.
+in our Docker image. Install nvidia-docker, `cd` into `docker/` and run `build_and_runbash.sh`.
 
 ## Running test on pre-trained model
 
@@ -20,5 +20,5 @@ loaded from the latest checkpoint in `checkpoint/` directory.
 
 ## Running training from scratch
 
-`rm -rf checkpoints/ && python3 train.py`
+run `./train.sh`. This will remove all checkpoint in `checkpoints/`
 
