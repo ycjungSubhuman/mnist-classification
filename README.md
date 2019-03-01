@@ -15,7 +15,7 @@ in our Docker image. Install nvidia-docker, `cd` into `docker/` and run `build_a
 
 `python3 test.py`
 
-This will print classificatino accuracy on MNIST test set with model 
+This will print classification accuracy on MNIST test set with model 
 loaded from the latest checkpoint in `checkpoint/` directory.
 
 ## Running training from scratch
