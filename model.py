@@ -37,7 +37,7 @@ def get_module(kind):
     else:
         raise RuntimeException('Not a valid module name : {}'.format(kind))
 
-# Gets 64 by 64 images. outputs (10)-sized one-hot vector
+# Gets 28 by 28 images. outputs (10)-sized log-liklihood vector
 class MnistClassifier(nn.Module):
     def __init__(self, mod_opt):
         super().__init__()
